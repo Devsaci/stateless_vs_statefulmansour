@@ -7,8 +7,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
 
-class CounterScreen extends StatelessWidget {
+class CounterScreen extends StatefulWidget {
   CounterScreen({Key? key}) : super(key: key);
+
+  @override
+  State<CounterScreen> createState() => _CounterScreenState();
+}
+
+class _CounterScreenState extends State<CounterScreen> {
   int counter = 1;
 
   @override
