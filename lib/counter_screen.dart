@@ -18,6 +18,12 @@ class _CounterScreenState extends State<CounterScreen> {
   int counter = 1;
 
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
@@ -32,8 +38,11 @@ class _CounterScreenState extends State<CounterScreen> {
             children: [
               TextButton(
                 onPressed: () {
+                  setState(() {
+
+                  });
                   counter--;
-                  print (counter);
+                  print(counter);
                 },
                 child: Text(
                   "Minus",
@@ -45,8 +54,11 @@ class _CounterScreenState extends State<CounterScreen> {
               ),
               TextButton(
                 onPressed: () {
+                  setState(() {
+
+                  });
                   counter++;
-                  print (counter);
+                  print(counter);
                 },
                 child: Text("Plus"),
               ),
