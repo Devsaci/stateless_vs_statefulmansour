@@ -25,7 +25,10 @@ class CounterScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  counter--;
+                  print (counter);
+                },
                 child: Text(
                   "Minus",
                 ),
@@ -35,7 +38,10 @@ class CounterScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  counter++;
+                  print (counter);
+                },
                 child: Text("Plus"),
               ),
             ],
